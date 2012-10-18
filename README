@@ -1,21 +1,5 @@
 xnat - SNAT(Source network address translation) base host name(DNS).
 
-Purpors:
+For full tutorial and documentation, see <a href="http://xnat4dns.blogspot.com/">http://xnat4dns.blogspot.com/</a>.
 
-  Sometimes we like to use different "lines"(or tunnel?) to read different web pages, for security or anonymous, or something else(may be the website was blocked by ISP).
-
-  For example, I have one cheap DSL line, one expensive VPN line, and I want to read "www.dsl.com" on DSL line, "www.vpn.com" on VPN line. So, what should I do?
-
-  There may be 2 ways to make it done:(tell me if I'm wrong)
-  
-  1). Shutdown VPN until you want to read "www.vpn.com", that means you can't use DSL and VPN at the same time.
-  2). Add some route rule, so that you can read "www.dsl.com" and "www.vpn.com" at the same time.
-
-  The main disadvantage of method(2) is that: you have to resolve the IP address of host name before cooking any route rule. Unfortunately, the IP address of host name usually not fixed.
-
-  With xnat, all you need is:
-
-  1). Config "www.dsl.com" use source address "6.6.6.6", and "www.vpn.com" use "9.9.9.9".
-  2). Route packet from "6.6.6.6" go to DSL, go to VPN when from "9.9.9.9".
-
-  then everything goes well.
+Any suggestion or feedback would be welcome to sheice432#gmail.com.
